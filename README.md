@@ -2,6 +2,7 @@
 
 This is a Django web application that implements a user authentication system with features like sign-up, login, password reset, password change, and user profile management.
 
+Visit: https://whatbytes-assignment-gilt.vercel.app/
 #### Features
 - User Registration: Allows users to sign up using a username, email, and password.
 - User Login: Users can log in with their username and password.

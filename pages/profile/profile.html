@@ -1,0 +1,25 @@
+{% extends '../base.html' %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="forms-section">
+        <div class="head">Hi! {{request.user.username}}</div>
+        <div class="head2">My Profile</div>
+      
+      <div class="buttons">
+        <div class="btn">Username: &nbsp;<span class="profile-detail">{{request.user.username}}</span></div>
+        <div class="btn">Email: &nbsp;<span class="profile-detail">{{request.user.email}}</span></div>
+        <div class="btn">Date Joined: &nbsp;<span class="profile-detail">{{request.user.date_joined}}</span></div>
+        <div class="btn">Last Active: &nbsp;<span class="profile-detail">{{request.user.last_login}}</span></div>
+      </div>
+
+      <div class="profile-footer">
+        <a href="/" style="color: #1c4e80;"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+        <a href="/logout/" style="color: #1c4e80;"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</a>
+      </div>
+      
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="forms-section">
+        <div class="head">Hi! {{request.user.username}}</div>
+      <div class="content">
+        Welcome to this brilliant example of an authentication app with cutting edge features!<div style="margin: 10px 0px;">Wanna Try them?</div>
+      </div>
+
+      <div class="buttons">
+        <a href="/my-profile/"><div class="btn">My Profile</div></a>
+        <a href="/change-password/"><div class="btn">Change Password?</div></a>
+      </div>
+
+      <div class="profile-footer">
+        <a href="/logout/" style="color: #1c4e80;"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout</a>
+      </div>
+      
+    </div>
+  </div>
+
+{% endblock %}
